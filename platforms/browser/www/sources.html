@@ -1,0 +1,40 @@
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax. -->
+
+<!-- Top Navbar-->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left">
+            <a href="#" class="back link">
+                <i class="icon icon-back"></i>
+                <span>Back</span>
+            </a>
+        </div>
+        <div class="center sliding">Sources</div>
+    </div>
+</div>
+<div class="pages">
+    <div data-page="sources" class="page">
+        <div class="page-content">
+            <div class="content-block">
+              <div class="Aligner-left">
+                <div class="Aligner-item--top">
+                  <h1>Here are the sources from my research.</h1>
+                  <h3>--Concussions</h3>
+                  •<a onClick='window.open("https://www.mayoclinic.org/diseases-conditions/concussion/symptoms-causes/syc-20355594", "_blank");' href="#"> Mayo Clinic@Concussion</a>
+                  <h3>--Drowning</h3>
+                  •<a onClick='window.open("https://www.mayoclinic.org/first-aid/first-aid-cpr/basics/art-20056600", "_blank");' href="#"> Mayo Clinic@CPR: First Aid</a>
+                  <h3>--Electrical Shocks</h3>
+                  •<a onClick='window.open("https://www.mayoclinic.org/first-aid/first-aid-electrical-shock/basics/art-20056695", "_blank");' href="#"> Mayo Clinic@Electrical Shock: First Aid</a>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+  $(".addressClick").click(function () {
+          var addressValue = $(this).attr("href");
+          alert(addressValue );
+          window.open(addressValue, "_system");
+      });
+</script>

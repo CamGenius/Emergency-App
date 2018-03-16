@@ -13,10 +13,16 @@
 .statusbar-overlay {
     background: #000000;
 }
-.Aligner {
+.Aligner-center {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.Aligner-left {
+  display: flex;
+  align-items: left;
+  justify-content: left;
 }
 
 .Aligner-item {
@@ -24,7 +30,7 @@
 }
 
 .Aligner-item--center {
-  
+
 }
 
 .Aligner-item--top {
